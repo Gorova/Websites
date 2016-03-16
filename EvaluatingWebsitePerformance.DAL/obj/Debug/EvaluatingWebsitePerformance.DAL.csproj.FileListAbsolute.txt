@@ -1,0 +1,10 @@
+C:\Users\Ira\Documents\Visual Studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.DAL\bin\Debug\EvaluatingWebsitePerformance.DAL.dll.config
+C:\Users\Ira\Documents\Visual Studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.DAL\bin\Debug\EvaluatingWebsitePerformance.DAL.dll
+C:\Users\Ira\Documents\Visual Studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.DAL\bin\Debug\EvaluatingWebsitePerformance.DAL.pdb
+C:\Users\Ira\Documents\Visual Studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.DAL\bin\Debug\EntityFramework.dll
+C:\Users\Ira\Documents\Visual Studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ira\Documents\Visual Studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.DAL\bin\Debug\EntityFramework.xml
+C:\Users\Ira\Documents\Visual Studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ira\Documents\Visual Studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.DAL\obj\Debug\EvaluatingWebsitePerformance.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Ira\Documents\Visual Studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.DAL\obj\Debug\EvaluatingWebsitePerformance.DAL.dll
+C:\Users\Ira\Documents\Visual Studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.DAL\obj\Debug\EvaluatingWebsitePerformance.DAL.pdb

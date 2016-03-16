@@ -1,0 +1,16 @@
+C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EvaluatingWebsitePerformance.BL.dll.config
+C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EvaluatingWebsitePerformance.BL.dll
+C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EvaluatingWebsitePerformance.BL.pdb
+C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\AutoMapper.dll
+C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EntityFramework.dll
+C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EvaluatingWebsitePerformance.Common.dll
+C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EvaluatingWebsitePerformance.DAL.dll
+C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EvaluatingWebsitePerformance.Common.pdb
+C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EvaluatingWebsitePerformance.DAL.pdb
+C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\AutoMapper.xml
+C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EntityFramework.xml
+C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\obj\Debug\EvaluatingWebsitePerformance.BL.csprojResolveAssemblyReference.cache
+C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\obj\Debug\EvaluatingWebsitePerformance.BL.dll
+C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\obj\Debug\EvaluatingWebsitePerformance.BL.pdb
