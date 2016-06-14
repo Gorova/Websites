@@ -6,7 +6,7 @@ namespace EvaluatingWebsitePerformance.DAL.API.Repositories
     {
         void Add<T>(T data) where T : class;
 
-        IQueryable<T> Get<T>() where T : class;
+        IQueryable<T> GetAll<T>() where T : class;
 
         T Get<T>(int id) where T : class;
 

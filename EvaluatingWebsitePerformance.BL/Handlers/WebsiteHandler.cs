@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using AutoMapper;
 using EvaluatingWebsitePerformance.BL.API.Handler;
 using EvaluatingWebsitePerformance.Common.DTO;
@@ -19,6 +15,13 @@ namespace EvaluatingWebsitePerformance.BL.Handlers
         {
         }
 
+        public IEnumerable<WebsiteDto> GetAll()
+        {
+            var websitesDto = Mapper.Map<IEnumerable<Website>, IEnumerable<WebsiteDto>>(repository.GetAll<Website>());
+
+            return websitesDto;
+        }
+
         public WebsiteDto Get(int id)
         {
             var websiteDto = Mapper.Map<Website, WebsiteDto>(repository.Get<Website>(id));
@@ -31,6 +34,14 @@ namespace EvaluatingWebsitePerformance.BL.Handlers
             var website = Mapper.Map<WebsiteDto, Website>(websiteDto);
 
             repository.Add(website);
+            repository.Save();
+        }
+
+        public void Update(WebsiteDto websiteDto)
+        {
+            var website = repository.Get<Website>( websiteDto.Id);
+
+            Mapper.Map(websiteDto, website);
             repository.Save();
         }
     }

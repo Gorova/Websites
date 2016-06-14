@@ -18,3 +18,43 @@ C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\
 C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\obj\Debug\EvaluatingWebsitePerformance.Bootstrap.pdb
 C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EvaluatingWebsitePerformance.BL.dll
 C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EvaluatingWebsitePerformance.BL.pdb
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EvaluatingWebsitePerformance.Bootstrap.dll.config
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EvaluatingWebsitePerformance.Bootstrap.dll
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EvaluatingWebsitePerformance.Bootstrap.pdb
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\AutoMapper.dll
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EvaluatingWebsitePerformance.BL.dll
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EvaluatingWebsitePerformance.Common.dll
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EvaluatingWebsitePerformance.DAL.dll
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\Ninject.dll
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EvaluatingWebsitePerformance.BL.pdb
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EvaluatingWebsitePerformance.Common.pdb
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EvaluatingWebsitePerformance.DAL.pdb
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\AutoMapper.xml
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\Ninject.xml
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\obj\Debug\EvaluatingWebsitePerformance.Bootstrap.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\obj\Debug\EvaluatingWebsitePerformance.Bootstrap.dll
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\obj\Debug\EvaluatingWebsitePerformance.Bootstrap.pdb
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EvaluatingWebsitePerformance.Bootstrap.dll.config
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EvaluatingWebsitePerformance.Bootstrap.dll
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EvaluatingWebsitePerformance.Bootstrap.pdb
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\AutoMapper.dll
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EvaluatingWebsitePerformance.BL.dll
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EvaluatingWebsitePerformance.Common.dll
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EvaluatingWebsitePerformance.DAL.dll
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\Ninject.dll
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EvaluatingWebsitePerformance.BL.pdb
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EvaluatingWebsitePerformance.Common.pdb
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EvaluatingWebsitePerformance.DAL.pdb
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\AutoMapper.xml
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\bin\Debug\Ninject.xml
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\obj\Debug\EvaluatingWebsitePerformance.Bootstrap.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\obj\Debug\EvaluatingWebsitePerformance.Bootstrap.dll
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Bootstrap\obj\Debug\EvaluatingWebsitePerformance.Bootstrap.pdb

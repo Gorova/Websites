@@ -18,7 +18,7 @@ namespace EvaluatingWebsitePerformance.DAL.Repositories
             this.context.Set<T>().Add(data);
         }
 
-        public IQueryable<T> Get<T>() where T : class
+        public IQueryable<T> GetAll<T>() where T : class
         {
             return this.context.Set<T>();
         }

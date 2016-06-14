@@ -14,3 +14,35 @@ C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\
 C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\obj\Debug\EvaluatingWebsitePerformance.BL.csprojResolveAssemblyReference.cache
 C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\obj\Debug\EvaluatingWebsitePerformance.BL.dll
 C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\obj\Debug\EvaluatingWebsitePerformance.BL.pdb
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EvaluatingWebsitePerformance.BL.dll.config
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EvaluatingWebsitePerformance.BL.dll
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EvaluatingWebsitePerformance.BL.pdb
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\AutoMapper.dll
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EvaluatingWebsitePerformance.Common.dll
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EvaluatingWebsitePerformance.DAL.dll
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EvaluatingWebsitePerformance.Common.pdb
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EvaluatingWebsitePerformance.DAL.pdb
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\AutoMapper.xml
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\obj\Debug\EvaluatingWebsitePerformance.BL.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\obj\Debug\EvaluatingWebsitePerformance.BL.dll
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\obj\Debug\EvaluatingWebsitePerformance.BL.pdb
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EvaluatingWebsitePerformance.BL.dll.config
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EvaluatingWebsitePerformance.BL.dll
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EvaluatingWebsitePerformance.BL.pdb
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\AutoMapper.dll
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EvaluatingWebsitePerformance.Common.dll
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EvaluatingWebsitePerformance.DAL.dll
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EvaluatingWebsitePerformance.Common.pdb
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EvaluatingWebsitePerformance.DAL.pdb
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\AutoMapper.xml
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\obj\Debug\EvaluatingWebsitePerformance.BL.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\obj\Debug\EvaluatingWebsitePerformance.BL.dll
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.BL\obj\Debug\EvaluatingWebsitePerformance.BL.pdb

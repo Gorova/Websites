@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using EvaluatingWebsitePerformance.Common.Interfaces;
 
 namespace EvaluatingWebsitePerformance.BL.API.Handler
@@ -13,5 +9,8 @@ namespace EvaluatingWebsitePerformance.BL.API.Handler
 
         void Add(TDto data);
 
-     }
+        IEnumerable<TDto> GetAll();
+
+        void Update(TDto data);
+    }
 }

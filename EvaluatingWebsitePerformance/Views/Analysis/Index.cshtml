@@ -8,31 +8,22 @@
 @using (Html.BeginForm())
 {
     <div class="form-horizontal">
-    <div class="form-group">
-        @Html.LabelFor(i => i.Name, new { @class = "col-md-2" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(i => i.Name, new { @class = "form-control" })
-            @Html.ValidationMessageFor(i => i.Name)
-        </div>
-    </div>
-        
         <div class="form-group">
-            @Html.LabelFor(i => i.Url, new { @class = "col-md-2" })
+            @Html.LabelFor(i => i.Url, new {@class = "col-md-2"})
             <div class="col-md-10">
-                @Html.TextBoxFor(i => i.Url, new { @class = "form-control" })
+                @Html.TextBoxFor(i => i.Url, new {@class = "form-control"})
                 @Html.ValidationMessageFor(i => i.Url)
             </div>
         </div>
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="count" class="btn btn-default" />
-                <input type="button" value="cancel" class="btn btn-default" onclick="location.href = '@Url.Action("Index", "Analysis")'" />
+                <input type="submit" value="count" class="btn btn-info"/>
+                <input type="button" value="cancel" class="btn btn-info" onclick="location.href = '@Url.Action("Index", "Analysis")'"/>
+                <button type="button" value="count" class="btn btn-info" onclick="performance()">build graph for all web sites from database</button>
             </div>
         </div>
     </div>
+    
 }
-<div>
-    <img src="@Url.Action("GetChart")" />
-</div>
-
+<canvas id="ChartForAll" width="600" height="400"></canvas>

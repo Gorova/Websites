@@ -1,0 +1,8 @@
+{
+	"name": "ASP.NET",
+	"private": true,
+  "dependencies": {
+    "Chart-js": "2.1.5"
+   
+  }
+}

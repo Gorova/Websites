@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using EvaluatingWebsitePerformance.BL.API.Handler;
 using EvaluatingWebsitePerformance.Bootstrap;
-using EvaluatingWebsitePerformance.Common.DTO;
 using EvaluatingWebsitePerformance.Common.Interfaces;
 using Ninject;
 

@@ -1,29 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Web.Mvc;
-using System.Web.Optimization;
-using System.Web.UI.DataVisualization.Charting;
 using AutoMapper;
 using EvaluatingWebsitePerformance.Common.DTO;
 using EvaluatingWebsitePerformance.ViewModel;
-
+using WebGrease.Css.Extensions;
 
 namespace EvaluatingWebsitePerformance.Controllers
 {
     public class AnalysisController : BaseController<WebsiteDto>
     {
         protected List<string> list = new List<string>();
-        protected List<long> listRequestTime = new List<long>();
-        
+        private long timeResponse;
+
         public ActionResult Index()
         {
             return View();
@@ -32,17 +27,22 @@ namespace EvaluatingWebsitePerformance.Controllers
         [HttpPost]
         public ActionResult Index(WebsiteViewModel viewModel)
         {
+            CreateNewWebSite(viewModel);
             var htmlString = GetHtml(viewModel);
-            
-            ManagePage(htmlString, viewModel);
-            Parallel.ForEach(list, (currentElement) =>
-            {
-                GetInnerHtml(currentElement);
-            });
+            var model = Mapper.Map<WebsiteDto, WebsiteViewModel>(handler.GetAll().FirstOrDefault(i => i.IsProcessed == false));
+            ManagePage(htmlString, model);
 
-            GetChart();
+            GetInnerWebsites(model);
+      
 
             return RedirectToAction("Index");
+        }
+
+        public JsonResult GetAll()
+        {
+            var viewModels = Mapper.Map<IEnumerable<WebsiteDto>, IEnumerable<WebsiteViewModel>>(handler.GetAll());
+
+            return Json(viewModels, JsonRequestBehavior.AllowGet);
         }
 
         private string GetHtml(WebsiteViewModel viewModel)
@@ -54,6 +54,7 @@ namespace EvaluatingWebsitePerformance.Controllers
             Stream responseStream = response.GetResponseStream();
 
             int count = 0;
+
             do
             {
                 count = responseStream.Read(buf, 0, buf.Length);
@@ -69,6 +70,24 @@ namespace EvaluatingWebsitePerformance.Controllers
             return sbForAnalyzing;
         }
 
+        public long GetTime(string reference)
+        {
+            var request = (HttpWebRequest)WebRequest.Create(reference);
+            var stopwatch = Stopwatch.StartNew();
+            var response = (HttpWebResponse)request.GetResponse();
+            stopwatch.Stop();
+
+            return timeResponse = stopwatch.ElapsedMilliseconds;
+        }
+
+        private void CreateNewWebSite( WebsiteViewModel viewModel)
+        {
+            var dto = Mapper.Map<WebsiteViewModel, WebsiteDto>(viewModel);
+            dto.IsProcessed = false;
+            dto.MillisecondsOfLoading = GetTime(dto.Url);
+            handler.Add(dto);
+        }
+
         private void ManagePage(string htmlString, WebsiteViewModel viewModel)
         {
             var mainHost = new Uri(viewModel.Url).Host;
@@ -76,167 +95,43 @@ namespace EvaluatingWebsitePerformance.Controllers
             string referenceHost;
             string pattern = "href\\s*=\\s*(?:[\"'](?<1>[^\"']*)[\"']|(?<1>\\S+))";
             
-            var dto = Mapper.Map<WebsiteViewModel, WebsiteDto>(viewModel);
-            dto.Name = viewModel.Name;
             var match = Regex.Match(htmlString, pattern, RegexOptions.IgnoreCase | RegexOptions.Compiled);
             
             while (match.Success)
             {
                 reference = match.Groups[1].Value;
                 Uri uri = null;
-                if (Uri.TryCreate(reference, UriKind.Absolute, out uri))
+                if (Uri.TryCreate(reference, UriKind.Absolute, out uri) && uri.IsFile ==false)
                 {
                     referenceHost = uri.Host;
-                    if (referenceHost == mainHost && !list.Any(i => i == reference))
+                    if (referenceHost == mainHost && list.All(i => i != reference))
                     {
                         list.Add(reference);
-
+                        var dto = new WebsiteDto();
                         dto.Url = reference;
+                        dto.MillisecondsOfLoading = GetTime(reference);
+                        dto.ParentId = viewModel.Id;
+                        dto.IsProcessed = false;
                         handler.Add(dto);
                     }
                 }
-
                 match = match.NextMatch();
             }
         }
 
-        private string GetInnerHtml(string reference)
+        private void GetInnerWebsites(WebsiteViewModel model)
         {
-            StringBuilder sb = new StringBuilder();
-            byte[] buf = new byte[100000];
-            var request = (HttpWebRequest)WebRequest.Create(reference);
-            var stopwatch = Stopwatch.StartNew();
-            var response = (HttpWebResponse)request.GetResponse();
-            stopwatch.Stop();
-            var timeResponse = stopwatch.ElapsedMilliseconds;
-            listRequestTime.Add(timeResponse);
-            Stream responseStream = response.GetResponseStream();
-
-            int count = 0;
-            do
-            {
-                count = responseStream.Read(buf, 0, buf.Length);
-                if (count != null)
-                {
-                    sb.Append(Encoding.Default.GetString(buf, 0, count));
-                }
-            }
-            while (count > 0);
-
-            var sbForAnalyzing = sb.ToString();
-
-            return sbForAnalyzing;
-        }
-
-        public FileContentResult GetChart()
-        {
-            List<Tuple<string, long>> datas = new List<Tuple<string, long>>();
-            for (int i = 0; i < list.Count; i++)
-            {
-                for (int j = i; j < listRequestTime.Count; j++)
-                {
-                    datas.Add(new Tuple<string, long>(list[i], listRequestTime[j]));
-                    break;
-                }
-            }
+            var dto = Mapper.Map<WebsiteViewModel, WebsiteDto>(model);
+            dto.IsProcessed = true;
+            handler.Update(dto);
             
-            var chart = new Chart();
-            chart.Width = 700;
-            chart.Height = 300;
-            chart.BackColor = Color.FromArgb(211, 223, 240);
-            chart.BorderlineDashStyle = ChartDashStyle.Solid;
-            chart.BackSecondaryColor = Color.White;
-            chart.BackGradientStyle = GradientStyle.TopBottom;
-            chart.BorderlineWidth = 1;
-            chart.Palette = ChartColorPalette.BrightPastel;
-            chart.BorderlineColor = Color.FromArgb(26, 59, 105);
-            chart.RenderType = RenderType.BinaryStreaming;
-            chart.BorderSkin.SkinStyle = BorderSkinStyle.Emboss;
-            chart.AntiAliasing = AntiAliasingStyles.All;
-            chart.TextAntiAliasingQuality = TextAntiAliasingQuality.Normal;
-            chart.Titles.Add(CreateTitle());
-            chart.Legends.Add(CreateLegend());
-            chart.Series.Add(CreateSeries(datas, SeriesChartType.Line, Color.Red));
-            chart.ChartAreas.Add(CreateArea());
+            var viewModels = Mapper.Map<IEnumerable<WebsiteDto>, IEnumerable<WebsiteViewModel>>(handler.GetAll().Where(i => i.ParentId == model.Id));
 
-            var memoryStream = new MemoryStream();
-            chart.SaveImage(memoryStream);
-            return File(memoryStream.GetBuffer(), @"image/png");
-        }
-
-        [NonAction]
-        public Title CreateTitle()
-        {
-            Title title = new Title();
-            title.Text = "result";
-            title.ShadowColor = Color.FromArgb(32, 0, 0, 0);
-            title.Font = new Font("Trebuchet MS", 14F, FontStyle.Bold);
-            title.ShadowOffset = 3;
-            title.ForeColor = Color.FromArgb(26, 59, 105);
-
-            return title;
-        }
-
-        [NonAction]
-        public Series CreateSeries(IList<Tuple<string, long>> datas, SeriesChartType chartType, Color color)
-        {
-            var seriesDetail = new Series();
-            seriesDetail.Name = "result";
-            seriesDetail.IsValueShownAsLabel = false;
-            seriesDetail.Color = color;
-            seriesDetail.ChartType = chartType;
-            seriesDetail.BorderWidth = 2;
-            seriesDetail["DrawingStyle"] = "Cylinder";
-            seriesDetail["pieDrawingStyle"] = "SoftEdge";
-            DataPoint point;
-
-            if (datas != null)
+            viewModels.ForEach(i =>
             {
-                foreach (var data in datas)
-                {
-                    point = new DataPoint();
-                    point.AxisLabel = data.Item1;
-                    point.YValues = new double[] { data.Item2 };
-                    seriesDetail.Points.Add(point);
-                }
-            }
-            
-            seriesDetail.ChartArea = "result";
-
-            return seriesDetail;
-        }
-
-        [NonAction]
-        public Legend CreateLegend()
-        {
-            var legend = new Legend();
-            legend.Name = "result";
-            legend.Docking = Docking.Bottom;
-            legend.Alignment = StringAlignment.Center;
-            legend.BackColor = Color.Transparent;
-            legend.Font = new Font(new FontFamily("Trebuchet MS"), 9);
-            legend.LegendStyle = LegendStyle.Row;
-
-            return legend;
-        }
-
-        [NonAction]
-        public ChartArea CreateArea()
-        {
-            var chartArea = new ChartArea();
-            chartArea.Name = "result";
-            chartArea.BackColor = Color.Transparent;
-            chartArea.AxisX.IsLabelAutoFit = false;
-            chartArea.AxisY.IsLabelAutoFit = false;
-            chartArea.AxisX.LabelStyle.Font = new Font("Verdana,Arial,Helvetica,sans-serif", 8F, FontStyle.Regular);
-            chartArea.AxisY.LabelStyle.Font = new Font("Verdana,Arial,Helvetica,sans-serif", 8F, FontStyle.Regular);
-            chartArea.AxisY.LineColor = Color.FromArgb(64, 64, 64, 64);
-            chartArea.AxisX.LineColor = Color.FromArgb(64, 64, 64, 64);
-            chartArea.AxisY.MajorGrid.LineColor = Color.FromArgb(64, 64, 64, 64);
-            chartArea.AxisX.MajorGrid.LineColor = Color.FromArgb(64, 64, 64, 64);
-            chartArea.AxisX.Interval = 1;
-
-            return chartArea;
+                var innerHtml = GetHtml(i);
+                ManagePage(innerHtml, i);
+            });
         }
     }
 }

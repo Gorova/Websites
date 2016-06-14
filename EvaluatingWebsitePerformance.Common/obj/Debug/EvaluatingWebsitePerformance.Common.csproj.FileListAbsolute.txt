@@ -3,3 +3,13 @@ C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\
 C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Common\obj\Debug\EvaluatingWebsitePerformance.Common.csprojResolveAssemblyReference.cache
 C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Common\obj\Debug\EvaluatingWebsitePerformance.Common.dll
 C:\Users\Ira\documents\visual studio 2013\Projects\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Common\obj\Debug\EvaluatingWebsitePerformance.Common.pdb
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Common\bin\Debug\EvaluatingWebsitePerformance.Common.dll
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Common\bin\Debug\EvaluatingWebsitePerformance.Common.pdb
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Common\obj\Debug\EvaluatingWebsitePerformance.Common.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Common\obj\Debug\EvaluatingWebsitePerformance.Common.dll
+C:\Users\Admin\Desktop\New folder\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Common\obj\Debug\EvaluatingWebsitePerformance.Common.pdb
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Common\bin\Debug\EvaluatingWebsitePerformance.Common.dll
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Common\bin\Debug\EvaluatingWebsitePerformance.Common.pdb
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Common\obj\Debug\EvaluatingWebsitePerformance.Common.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Common\obj\Debug\EvaluatingWebsitePerformance.Common.dll
+C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.Common\obj\Debug\EvaluatingWebsitePerformance.Common.pdb
