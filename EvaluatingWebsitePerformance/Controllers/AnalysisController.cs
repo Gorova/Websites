@@ -18,7 +18,7 @@ namespace EvaluatingWebsitePerformance.Controllers
     {
         protected List<string> list = new List<string>();
         private long timeResponse;
-
+       
         public ActionResult Index()
         {
             return View();
@@ -47,9 +47,13 @@ namespace EvaluatingWebsitePerformance.Controllers
 
         private string GetHtml(WebsiteViewModel viewModel)
         {
+            HttpWebRequest request = null;
+            
             StringBuilder sb = new StringBuilder();
             byte[] buf = new byte[100000];
-            var request = (HttpWebRequest)WebRequest.Create(viewModel.Url);
+
+            request = (HttpWebRequest) WebRequest.Create(viewModel.Url);
+            request.AllowAutoRedirect = false;
             var response = (HttpWebResponse) request.GetResponse();
             Stream responseStream = response.GetResponseStream();
 
@@ -72,12 +76,16 @@ namespace EvaluatingWebsitePerformance.Controllers
 
         public long GetTime(string reference)
         {
-            var request = (HttpWebRequest)WebRequest.Create(reference);
+            HttpWebRequest request = null;
+            request = (HttpWebRequest)WebRequest.Create(reference);
+            request.AllowAutoRedirect = false;
             var stopwatch = Stopwatch.StartNew();
             var response = (HttpWebResponse)request.GetResponse();
             stopwatch.Stop();
-
-            return timeResponse = stopwatch.ElapsedMilliseconds;
+            timeResponse = stopwatch.ElapsedMilliseconds;
+            
+            
+            return timeResponse;
         }
 
         private void CreateNewWebSite( WebsiteViewModel viewModel)

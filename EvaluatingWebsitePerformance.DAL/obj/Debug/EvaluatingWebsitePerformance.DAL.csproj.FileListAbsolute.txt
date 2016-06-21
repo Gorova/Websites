@@ -28,3 +28,13 @@ C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance
 C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.DAL\obj\Debug\EvaluatingWebsitePerformance.DAL.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.DAL\obj\Debug\EvaluatingWebsitePerformance.DAL.dll
 C:\Users\Admin\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.DAL\obj\Debug\EvaluatingWebsitePerformance.DAL.pdb
+C:\Users\Ira\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.DAL\bin\Debug\EvaluatingWebsitePerformance.DAL.dll.config
+C:\Users\Ira\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.DAL\bin\Debug\EvaluatingWebsitePerformance.DAL.dll
+C:\Users\Ira\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.DAL\bin\Debug\EvaluatingWebsitePerformance.DAL.pdb
+C:\Users\Ira\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.DAL\bin\Debug\EntityFramework.dll
+C:\Users\Ira\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ira\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.DAL\bin\Debug\EntityFramework.xml
+C:\Users\Ira\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ira\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.DAL\obj\Debug\EvaluatingWebsitePerformance.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Ira\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.DAL\obj\Debug\EvaluatingWebsitePerformance.DAL.dll
+C:\Users\Ira\Desktop\EvaluatingWebsitePerformance\EvaluatingWebsitePerformance.DAL\obj\Debug\EvaluatingWebsitePerformance.DAL.pdb
